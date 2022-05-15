@@ -1,0 +1,21 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                // Let Rollup bundle modules up
+                "modules": false,
+
+                // Transpile to ES3 without Object.defineProperties
+                "targets": {
+                    "ie": 8
+                },
+                "loose": true,
+
+                // Add polyfills automatically
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ]
+    ]
+}
